@@ -28,11 +28,11 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
 * URI : http://localhost:8093/oauth/token 
 * HTTP METHOD : POST 
 * HTTP HEADER : Authorization Basic
-** username : Client ID
-** password : Client Secret key
+  * username : Client ID
+  * password : Client Secret key
 * BODY PARAM  : 
-** grant_type : Password
-** refresh_token : token
+  * grant_type : Password
+  * refresh_token : token
   
 # DB 스키마
 아래는 Spring boot Oauth2 DB Scheme 입니다.
