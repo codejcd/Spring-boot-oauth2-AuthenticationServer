@@ -13,16 +13,16 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
 # 테스트
 ##### POSTMAN 같은 API TEST 가능한 툴로 아래의 요건으로 호출.
 1. token 발급
-### URI : http://localhost:8093/oauth/token 
-### HTTP METHOD : POST
-### HTTP HEADER : Authorization Basic
-#### username : Client ID
-### password : Client Secret key
-### BODY PARAM  : 
-#### client_id : Client ID
-#### grant_type : Password
-#### username : User ID
-#### password : Password
+* URI : http://localhost:8093/oauth/token 
+* HTTP METHOD : POST
+* HTTP HEADER : Authorization Basic
+* username : Client ID
+* password : Client Secret key
+* BODY PARAM  : 
+** client_id : Client ID
+** grant_type : Password
+** username : User ID
+** password : Password
  
 2. refresh token 발급
 ### URI : http://localhost:8093/oauth/token 
