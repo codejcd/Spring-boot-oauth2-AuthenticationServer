@@ -11,7 +11,7 @@ Spring Boot 2.1.6 / Maven 4.0.0 / Mybatis 2.1.0 / MySQL 5.6
 Authorization Code, Implicit, password credential, client credential 중 __password credential__ 사용
 
 # 테스트
-##### POSTMAN 같은 API TEST 가능한 툴로 아래의 요건으로 호출.
+### POSTMAN 같은 API TEST 가능한 툴로 아래의 요건으로 호출.
 1. token 발급
 * URI : http://localhost:8093/oauth/token 
 * HTTP METHOD : POST
@@ -46,7 +46,7 @@ DB 테이블에 passwod,refresh_token 값이 원자값이 들어가지 않을수
 이 프로그램에 사용된 DB 스키마 파일은 src/resource/db/scheme.sql, test_data.sql 을 참고해주세요.
 testData의 clientScret 의 값은 암호화 되어 있으며, 원문 값은 testSecret 입니다.
 user password 값은 1234 입니다.
-테스트 용도로 생성된 값이므로 반드시 해당 값만 용할 필요는 없습니다.
+테스트 용도로 생성된 값이므로 반드시 해당 값만 사용할 필요는 없습니다.
 </pre>
 
 
