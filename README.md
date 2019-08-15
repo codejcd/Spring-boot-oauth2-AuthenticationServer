@@ -36,6 +36,7 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
   
 # DB 스키마
 https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/test/resources/schema.sql
+<pre>
 위 링크는 Spring boot Oauth2 DB Scheme 입니다.
 그대로 MySQL 로 생성 시에는 몇 가지의 문제점이 있습니다.
 일단 PK 가되는 컬럼의 길이 문제 때문에 그대로 생성할수 없습니다.
@@ -46,7 +47,7 @@ DB 테이블에 passwod,refresh_token 값이 원자값이 들어가지 않을수
 testData의 clientScret 의 값은 암호화 되어 있으며, 원문 값은 testSecret 입니다.
 user password 값은 1234 입니다.
 테스트 용도로 생성된 값이므로 반드시 해당 값만 용할 필요는 없습니다.
-
+</pre>
 
 
  
