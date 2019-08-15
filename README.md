@@ -11,8 +11,8 @@ Spring Boot 2.1.6 / Maven 4.0.0 / Mybatis 2.1.0 / MySQL 5.6
 Authorization Code, Implicit, password credential, client credential 중 __password credential__ 사용
 
 # 테스트
-## POSTMAN 같은 API TEST 가능한 툴로 아래의 요건으로 호출.
-### token 발급
+##### POSTMAN 같은 API TEST 가능한 툴로 아래의 요건으로 호출.
+1. token 발급
 ### URI : http://localhost:8093/oauth/token 
 ### HTTP METHOD : POST
 ### HTTP HEADER : Authorization Basic
@@ -23,8 +23,8 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
 #### grant_type : Password
 #### username : User ID
 #### password : Password
-  
-## refresh token 발급
+ 
+2. refresh token 발급
 ### URI : http://localhost:8093/oauth/token 
 ### HTTP METHOD : POST 
 ### HTTP HEADER : Authorization Basic
