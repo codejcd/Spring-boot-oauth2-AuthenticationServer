@@ -35,15 +35,20 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
   * refresh_token : token
   
 # DB 스키마
-아래는 Spring boot Oauth2 DB Scheme 입니다.
-그대로 MySQL 로 생성시에는 몇가지의 문제점이 있습니다.
-일단 PK 가되는 컬럼의 길이 문제 때문에 그대로 생성할수 없습니다.\
+https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/test/resources/schema.sql
+위 링크는 Spring boot Oauth2 DB Scheme 입니다.
+그대로 MySQL 로 생성 시에는 몇 가지의 문제점이 있습니다.
+일단 PK 가되는 컬럼의 길이 문제 때문에 그대로 생성할수 없습니다.
 그리고 기본적으로 MySQL은 RDBMS 입니다. 상황에 따라 grant_type 의 경우 
 DB 테이블에 passwod,refresh_token 값이 원자값이 들어가지 않을수도 있습니다.
 적절하게 테이블 구조를 고칠 필요가 있습니다.
-이 프로그램에 사용된 DB 스키마 파일은 mysql_db_scheme.sql을 참고해주세요.
- 
- https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/test/resources/schema.sql
+이 프로그램에 사용된 DB 스키마 파일은 src/resource/db/scheme.sql, test_data.sql 을 참고해주세요.
+testData의 clientScret 의 값은 암호화 되어 있으며, 원문 값은 testSecret 입니다.
+user password 값은 1234 입니다.
+테스트 용도로 생성된 값이므로 반드시 해당 값만 용할 필요는 없습니다.
+
+
+
  
  
  
