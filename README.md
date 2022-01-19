@@ -1,4 +1,4 @@
-# Spring-boot-oauth2-AuthenticationServer
+# spring-boot-oauth2-authentication-server
 spring-boot-oauth2 password credential
 
 # 내용
