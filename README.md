@@ -20,7 +20,7 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
   * password : Client Secret key
 * BODY PARAM  : 
   * client_id : Client ID
-  * grant_type : Password
+  * grant_type : password
   * username : User ID
   * password : Password
  
@@ -31,8 +31,8 @@ Authorization Code, Implicit, password credential, client credential 중 __passw
   * username : Client ID
   * password : Client Secret key
 * BODY PARAM  : 
-  * grant_type : Password
-  * refresh_token : token
+  * grant_type : refresh_token
+  * refresh_token : Refresh Token
   
 # DB 스키마
 https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/test/resources/schema.sql
