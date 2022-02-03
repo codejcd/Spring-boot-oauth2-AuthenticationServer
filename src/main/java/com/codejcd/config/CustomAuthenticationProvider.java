@@ -8,8 +8,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-
-import com.codejcd.service.CustumUserDetailService;
+import com.codejcd.service.CustomUserDetailService;
 
 /**
  * AuthenticationProvider Impl
@@ -19,11 +18,11 @@ import com.codejcd.service.CustumUserDetailService;
 @Component
 public class CustomAuthenticationProvider implements org.springframework.security.authentication.AuthenticationProvider {
 	
-	 @Autowired
-	 private PasswordEncoder passwordEncoder; 
+	@Autowired
+	private PasswordEncoder passwordEncoder; 
 	 
-	 @Autowired
-	 private CustumUserDetailService custumUserDetailService;
+	@Autowired
+	private CustomUserDetailService custumUserDetailService;
 	
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
@@ -45,7 +44,7 @@ public class CustomAuthenticationProvider implements org.springframework.securit
 	}
 	
 	@Override
-	public boolean supports(Class<?> authentication) {
+	public boolean supports(Class<?> authentication) { // false 경우 authenticate 메소드 호출하지 않음.
 		return authentication.equals(UsernamePasswordAuthenticationToken.class);
 	}
 
