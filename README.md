@@ -3,6 +3,7 @@ spring-boot-oauth2 password credential
 
 # 내용
 스프링 부트 기반 Oauth2 인증 서버
+
 상세 설명은 아래 블로그를 참고해주세요.
 
 https://codejcd.tistory.com/11
