@@ -53,9 +53,13 @@ user password 값은 1234 입니다.
 테스트 용도로 생성된 값이므로 반드시 해당 값만 사용할 필요는 없습니다.
 </pre>
 
-
+3. token 체크
+* URI : http://localhost:8093/oauth/check_token 
+* HTTP METHOD : POST 
+* HTTP HEADER : Authorization Basic
+  * username : Client ID
+  * password : Client Secret key
+* BODY PARAM  : 
+  * token : Token
+  * refresh_token : Token
  
- 
- 
- 
-  
