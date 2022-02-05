@@ -1,5 +1,4 @@
-# spring-boot-oauth2-authentication-server
-spring-boot-oauth2 password credential
+# spring-security-oauth2-authentication-server
 
 # 내용
 스프링 부트 기반 Oauth2 인증 서버
