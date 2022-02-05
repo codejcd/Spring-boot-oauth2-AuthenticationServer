@@ -61,4 +61,7 @@ testData의 clientScret 의 값은 암호화 되어 있으며, 원문 값은 tes
 user password 값은 1234 입니다.
 테스트 용도로 생성된 값이므로 반드시 해당 값만 사용할 필요는 없습니다.
 </pre>
+
+# 참고
+리소스 서버 : https://github.com/codejcd/spring-secutiy-oauth2-resource-server
  
